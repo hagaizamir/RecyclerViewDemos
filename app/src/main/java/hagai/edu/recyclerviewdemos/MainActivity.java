@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
 
         //2)init the adapter
 
-        SongAdapter adapter  =new SongAdapter(getLayoutInflater(),this,SongDataSource.getSongs());
+        SongAdapter adapter  = new SongAdapter(this,SongDataSource.getSongs());
 
        //3)layout manager
 
