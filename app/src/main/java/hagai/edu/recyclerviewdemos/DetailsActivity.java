@@ -7,6 +7,7 @@ import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
+import android.widget.Toast;
 
 public class DetailsActivity extends AppCompatActivity {
 
@@ -28,6 +29,7 @@ public class DetailsActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         Intent intent = getIntent();
         SongItem item = intent.getParcelableExtra("song");
+        Toast.makeText(this , item.getTitle(),Toast.LENGTH_SHORT).show();
     }
 
 }
